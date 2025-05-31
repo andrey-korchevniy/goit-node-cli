@@ -1,0 +1,21 @@
+{
+  "name": "goit-node-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "getAll": "node src/index.js -a list",
+    "addContact": "node src/index.js -a add -n",
+    "delById": "node src/index.js -a remove -i",
+    "getById": "node src/index.js -a get -i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.11.0",
+  "dependencies": {
+    "commander": "^14.0.0",
+    "nanoid": "^5.0.0"
+  }
+}

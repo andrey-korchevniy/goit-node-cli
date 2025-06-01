@@ -2,13 +2,13 @@
   "name": "goit-node-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "getAll": "node src/index.js -a list",
-    "addContact": "node src/index.js -a add -n",
-    "delById": "node src/index.js -a remove -i",
-    "getById": "node src/index.js -a get -i"
+    "getAll": "node index.js -a list",
+    "addContact": "node index.js -a add -n",
+    "delById": "node index.js -a remove -i",
+    "getById": "node index.js -a get -i"
   },
   "keywords": [],
   "author": "",

@@ -60,16 +60,16 @@ npm run delById qdggE76Jtbfd9eWJHrssH
 
 ```bash
 # Показати всі контакти
-node src/index.js -a list
+node index.js -a list
 
 # Знайти контакт
-node src/index.js -a get -i "qdggE76Jtbfd9eWJHrssH"
+node index.js -a get -i "qdggE76Jtbfd9eWJHrssH"
 
 # Додати контакт
-node src/index.js -a add -n "Іван" -e "ivan@test.com" -p "+380123456789"
+node index.js -a add -n "Іван" -e "ivan@test.com" -p "+380123456789"
 
 # Видалити контакт
-node src/index.js -a remove -i "qdggE76Jtbfd9eWJHrssH"
+node index.js -a remove -i "qdggE76Jtbfd9eWJHrssH"
 ```
 
 ## Структура проекту

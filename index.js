@@ -12,22 +12,6 @@ program.parse();
 
 const options = program.opts();
 
-function displayContact(contact, title = "📋 Contact Details") {
-    if (!contact) {
-        console.log("❌ Contact not found");
-        return;
-    }
-
-    console.log(`\n${title}`);
-    console.log("═".repeat(50));
-    console.log(`👤 Name:  ${contact.name}`);
-    console.log(`📧 Email: ${contact.email}`);
-    console.log(`📞 Phone: ${contact.phone}`);
-    console.log(`🆔 ID:    ${contact.id}`);
-    console.log("═".repeat(50));
-}
-
-// TODO: рефакторити
 async function invokeAction({ action, id, name, email, phone }) {
     switch (action) {
         case "list":
@@ -37,17 +21,17 @@ async function invokeAction({ action, id, name, email, phone }) {
 
         case "get":
             const contact = await getContactById(id);
-            displayContact(contact, "🔍 Found Contact");
+            console.log(contact);
             break;
 
         case "add":
             const newContact = await addContact(name, email, phone);
-            displayContact(newContact, "✅ Contact Added");
+            console.log(newContact);
             break;
 
         case "remove":
             const removedContact = await removeContact(id);
-            displayContact(removedContact, "🗑️ Contact Removed");
+            console.log(removedContact);
             break;
 
         default:
